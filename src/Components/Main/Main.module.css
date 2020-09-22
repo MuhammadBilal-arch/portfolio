@@ -1,0 +1,15 @@
+.Main{
+    content: "";
+    position: absolute;
+    left:30%;
+    width:65%;
+    height:700px; 
+    z-index: 2;
+}
+
+@media (max-width:945px) {
+    .Main {
+        left:0%;
+        width:100%;
+    }
+}
