@@ -4,7 +4,7 @@ import classes from "./Contact.module.css";
 export default class Contact extends Component {
   render() {
     return (
-      <div className={classes.ContactPage}>
+      <div className={classes.ContactPage} id = 'Contact'>
         <h1 className={classes.ContactHeading}>Contact Me</h1>
         <p className={classes.ContactParagraph}>
           Fusce eget nibh nec justo interdum condimentum. Morbi justo ex,

@@ -5,7 +5,7 @@ import AboutImage2 from "../../../bgimage2.jpg";
 export default class About extends Component {
   render() {
     return (
-      <div className={classes.About}>
+      <div className={classes.About} id = 'About'>
         <h1 className={classes.AboutHeading}>About Me</h1>
         <p>
           I'm Muhammad Bilal Chughtai and I'm Front End Developer with Html ,
@@ -23,7 +23,7 @@ export default class About extends Component {
               sit amet eleifend purus ligula eget eros. Sed tincidunt quam vitae
               neque pharetra dignissim eget ut libero.
             </p>
-            <button>Read More</button>
+            <button>READ MORE</button>
           </div>
         </div>
         <hr />
@@ -36,7 +36,7 @@ export default class About extends Component {
               sit amet eleifend purus ligula eget eros. Sed tincidunt quam vitae
               neque pharetra dignissim eget ut libero.
             </p>
-            <button>Read More</button>
+            <button>READ MORE</button>
           </div>
           <div className={classes.AboutMenuImg}>
             <img src={AboutImage2} alt="" />

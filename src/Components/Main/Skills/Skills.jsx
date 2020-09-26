@@ -33,7 +33,7 @@ export default class Skills extends Component {
   };
   render() {
     return (
-      <div className={classes.SkillsPage}>
+      <div className={classes.SkillsPage} id = 'Skills'>
         <h1 className={classes.SkillsHeading}>What I’m good at?</h1>
         <p className={classes.SkillParagraph}>
           Curabitur leo felis, rutrum vitae varius eu, malesuada a tortor.

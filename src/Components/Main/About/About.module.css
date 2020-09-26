@@ -67,15 +67,24 @@
 
 
 .AboutMenuPg button {
-    padding: 10px 20px;
+    padding: 14px;
     outline: none;
     border: none;
     color: orange;
-    font-weight: bold;
+    /* background-color: white; */
+    font-size: 14px;
+    font-weight: bolder;
     margin-top: 20px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
+.AboutMenuPg button:hover
+{
+    transition: 1s;
+    color: white;
+    background-color: orange;
+}
 @media (max-width:1080px) {
     .AboutMenu {
         padding: 50px 0px;

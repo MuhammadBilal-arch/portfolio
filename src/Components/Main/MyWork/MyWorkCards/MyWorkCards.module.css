@@ -1,0 +1,160 @@
+.WorkCardHolder {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.WorkCardUL {
+    list-style: none;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.WorkCardUL li {
+
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.WorkCardLiActive
+{
+    color:orange;
+    border-bottom:2px solid orange;
+    transition: 1s;    
+}
+
+.WorkCardLiNotActive
+{
+    border-bottom:2px solid transparent;
+    transition: 1s;
+}
+.WorkCard {
+    width: 48%;
+    height: auto;
+    margin-bottom: 15px;
+    animation: AnimateCard 5s ease-in-out;
+}
+
+@keyframes AnimateCard {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.2
+    }
+
+    40% {
+        opacity: 0.5
+    }
+
+    80% {
+        opacity: 0.7
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.WorkCardImage {
+    position: relative;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 80%;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+.WorkCardEffect
+{
+    content: "";
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width:80%;
+    height:80%;
+    transform: perspective(400px) rotateX(90deg);
+    background-color: rgba(99, 97, 97, 0.811);
+    backface-visibility: hidden;
+    padding:40px 20px;
+    transition: 2s;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.WorkCardEffect i  {
+    
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:48px;
+    height:45px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.WorkCardEffect h3
+{
+    margin-top: 15px;
+    color:black;
+    font-size: 24px;
+    font-weight: bold;
+    /* text-align: center; */
+}
+
+.WorkCardEffect p {
+    padding:0;
+    margin-top:5px;
+}
+.WorkCardImage:hover .WorkCardEffect{
+    transform: perspective(400px) rotateX(360deg);
+}
+
+.WorkCard hr {
+    margin-top: 40px;
+    width: 100%;
+    height: 1px;
+    color: rgba(99, 97, 97, 0.411);
+}
+
+.WorkCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width:1080px) {
+    .WorkCardHolder {
+        padding: 50px 0px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .WorkCard {
+        width: 100%;
+        height: 100%;
+    }
+}
